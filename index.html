@@ -12,11 +12,12 @@
 
 <body>
     <header class="header">
-        <div class="menu menu__active>">
+        <div class="menu ">
             <div class="container">
                 <nav class="menu__nav">
                     <a href="#" class="menu__link">Главная</a>
                     <a href="#" class="menu__link">Продукция</a>
+                    <a href="#" class="menu__link">Каталог</a>
                     <a href="#" class="menu__link">Примеры работ</a>
                     <a href="#" class="menu__link">Примерка изображений</a>
                     <a href="#" class="menu__link">Стоимость дилерам</a>
@@ -24,6 +25,7 @@
                 </nav>
             </div>
             <!-- /.container -->
+
         </div>
         <!-- ./menu -->
         <div class="navbar">
@@ -39,6 +41,7 @@
                         <span class="logo__description">ведущий производитель скинали</span>
                     </div>
                     <!-- /.logo navbar__logo -->
+
                     <div class="navbar__mobile">
                         <a class="navbar__phone" href="tel:88008000000">8 800 800-00-00</a>
                         <div class="navbar__work-time navbar__small-text">без выходных 9-21</div>
@@ -51,8 +54,10 @@
                 </div>
             </div>
             <!-- /.container -->
+
         </div>
         <!-- /.navbar -->
+
         <div class="hero">
             <div class="container">
                 <h1 class="hero__title">Гарантия <br>минимальной цены <br>на скинали</h1>
@@ -61,8 +66,75 @@
             </div>
         </div>
         <!-- /.hero -->
+
     </header>
     <!-- /.header -->
+    <main class="main">
+
+        <section class="offer bg-secondary">
+            <div class="container">
+                <div class="offer__block offer-block">
+
+                    <div class="offer__title">Оставьте заявку на расчет</div>
+                    <span class="offer__subtitle">и получите скидку 30% на изготовление скинали или фартука для
+                        кухни</span>
+
+                    <form action="#" class="form offer__form">
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Вид стекла</label>
+                                <input class="input form__input" type="text">
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">Ширина, см</label>
+                                <input class="input form__input" type="text">
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">Высота, см</label>
+                                <input class="input form__input" type="text">
+                            </div>
+                        </div>
+                        <!-- /.form__row -->
+
+                        <div class="form__row form__row-checkbox">
+                            <div class="form__checkbox ">
+                                <input class="checkbox" type="checkbox" id="install">
+                                <label class="checkbox-label" for="install">
+                                    Монтаж</label>
+                            </div>
+                            <div class="form__checkbox">
+                                <input class="checkbox" type="checkbox" id="delivery">
+                                <label class="checkbox-label" for="delivery">
+                                    Доставка</label>
+                            </div>
+                        </div>
+                        <!-- /.form__row -->
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <input class="input form__input" type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="form__group">
+                                <input class="input form__input" type="text" placeholder="Ваш телефон">
+                            </div>
+                            <div class="form__group">
+                                <input class="button form__button" type="submit" value="Получить скидку">
+                            </div>
+                        </div>
+
+                    </form>
+                    <!-- /.form offer__form -->
+
+                </div>
+                <!-- /.offer__block offer-block -->
+
+            </div>
+        </section>
+        <!-- /.offer -->
+
+    </main>
+    <!-- /.main -->
 </body>
 
 </html>
