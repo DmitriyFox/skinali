@@ -48,6 +48,21 @@ body {
   color: #262626;
 }
 
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  text-align: center;
+}
+
+.section__title {
+  margin-bottom: 100px;
+}
+
 .button-o {
   border: 2px solid #507fe1;
   padding: 17px 20px;
@@ -378,17 +393,25 @@ input[type="checkbox"]:checked + label::before {
   .offer__subtitle {
     font-size: 18px;
   }
+  .form__checkbox {
+    margin-bottom: 10px;
+  }
   .form__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .form__row-checkbox {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .form__group {
     -ms-flex-preferred-size: 100%;
@@ -397,6 +420,42 @@ input[type="checkbox"]:checked + label::before {
   }
   .form__input {
     margin-bottom: 20px;
+  }
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features-block__item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.features-block__item {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
