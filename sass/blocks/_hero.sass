@@ -1,6 +1,9 @@
 .hero
     background: #CDEDFF url('../img/hero/hero-bg.jpg') no-repeat center top 80px
     background-size: contain
+    // background-size: cover
+    // мои донастройки 
+    // background-position: 60%
     padding-top: 180px
     padding-bottom: 270px
     &__title
@@ -13,4 +16,8 @@
         margin-bottom: 67px
         font-size: 30px
         +bold
-
+@media (max-width: 991px)
+    .hero
+        background-size: cover 
+        background-position: top left 55%
+        // background-position: top left 30%
