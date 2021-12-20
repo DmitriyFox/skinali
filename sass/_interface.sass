@@ -6,15 +6,14 @@ button
     cursor: pointer
 img
     max-width: 100%
+    display: block
 .section
     padding: 100px 0
-
     &-title
         font-size: 30px
         text-transform: uppercase
         +bold
         text-align: center
-
     &__title
         margin-bottom: 100px
 
@@ -37,7 +36,6 @@ img
         +bold
         background-color: #fff
         text-decoration: none
-
     &-fitting
         background-color: #fff
         color: $primary
@@ -61,7 +59,6 @@ img
 
 input[type="checkbox"]
     display: none
-
     &:checked + label::before
         background-color: $primary
 
@@ -73,7 +70,6 @@ input[type="checkbox"]
         align-items: center
         margin-right: 40px
         cursor: pointer
-
         &::before
             content: ''
             width: 30px
@@ -82,11 +78,12 @@ input[type="checkbox"]
             margin-right: 20px
 
 @media (max-width: 576px)
-    .button-o
+    .button
+        font-size: 10px
+        &-o
         font-size: 10px
 
     .section
         padding: 60px 0
-
         &-title
             font-size: 24px
